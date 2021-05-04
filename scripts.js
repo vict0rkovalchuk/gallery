@@ -87,16 +87,20 @@ class Gallery {
       window.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
           refs.modalRef.classList.remove("is-open");
+          document.body.style.overflow = "";
         }
       });
 
       refs.overlayRef.addEventListener("click", () => {
         refs.modalRef.classList.remove("is-open");
+        document.body.style.overflow = "";
       });
 
       refs.btn.addEventListener("click", () => {
         refs.modalRef.classList.remove("is-open");
+        document.body.style.overflow = "";
       });
+      document.body.style.overflow = "hidden";
     }
   }
 }
