@@ -124,8 +124,8 @@ body {
 
 .btn-next {
   position: absolute;
-  right: 15px;
-  top: 71px;
+  right: 0;
+  top: 74px;
   height: 90%;
   width: 48px;
   background-color: gray;
@@ -142,7 +142,8 @@ body {
 .lightbox__button {
   position: absolute;
   top: 8px;
-  right: 16px;
+  /* right: 16px; */
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
