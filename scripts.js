@@ -20,8 +20,12 @@ class Gallery {
   }
 
   newImagesOnPage() {
-    imagesRefs.forEach(({ original }) => {
-      refs.ulRef.innerHTML += `<li class="gallery__item"><a class="gallery__link" href="${original}"><img class="gallery__image" src="${original}" data-source="${original}"/></a></li>`;
+    imagesRefs.forEach(({ description, preview, original }) => {
+      refs.ulRef.innerHTML += `<li class="gallery__item">
+      <a class="gallery__link" href="${original}">
+      <img class="gallery__image" src="${original}" data-source="${preview}" alt="${description}"/>
+      </a>
+      </li>`;
     });
   }
 
